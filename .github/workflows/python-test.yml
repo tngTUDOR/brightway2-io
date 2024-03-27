@@ -10,7 +10,7 @@ on:
   push:
     # We might want to have a separate workflow for legacy branch, since that one supports
     # python >= 3.8
-    branches: [main]
+    # branches: [main]
     paths-ignore: # prevents workflow execution when only these types of files are modified
       - "**.md" # wildcards prevent file in any repo dir from trigering workflow
       - "**.bib"
