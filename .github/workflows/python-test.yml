@@ -59,6 +59,7 @@ jobs:
 
       - name: Test with pytest
         run: |
+          # the options are configured in the pyproject.toml file
           pytest
 
       #- name: Upload coverage reports to Codecov
