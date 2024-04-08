@@ -1,21 +1,27 @@
 Brightway2 input and output
 ===========================
 
-.. image:: https://img.shields.io/pypi/v/bw2io.svg
-   :target: https://pypi.org/project/bw2io/
-   :alt: bw2io pypi version
-   
-.. image:: https://img.shields.io/conda/vn/conda-forge/bw2io.svg
-   :target: https://anaconda.org/conda-forge/bw2io
-   :alt: bw2io conda-forge version
+[![PyPI](https://img.shields.io/pypi/v/bw2io.svg)][pypi status]
+[![Status](https://img.shields.io/pypi/status/bw2io.svg)][pypi status]
+[![Python Version](https://img.shields.io/pypi/pyversions/bw2io)][pypi status]
+[![License](https://img.shields.io/pypi/l/brightway2-io)][license]
 
-.. image:: https://ci.appveyor.com/api/projects/status/7dox9te430eb2f8h?svg=true
-   :target: https://ci.appveyor.com/project/cmutel/brightway2-io
-   :alt: bw2io appveyor build status
+<!--[![Read the documentation at https://brightway2-io.readthedocs.io/](https://img.shields.io/readthedocs/brightway2-io/latest.svg?label=Read%20the%20Docs)][read the docs]-->
+[![Tests](https://github.com/brightway-lca/brightway2-io/actions/workflows/python-test.yml/badge.svg)][tests]
+<!--[![Codecov](https://codecov.io/gh/brightway-lca/brightway2-io/branch/main/graph/badge.svg)][codecov]-->
 
-.. image:: https://coveralls.io/repos/bitbucket/cmutel/brightway2-io/badge.svg?branch=master
-    :target: https://coveralls.io/bitbucket/cmutel/brightway2-io?branch=default
-    :alt: Test coverage report
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+
+[pypi status]: https://pypi.org/project/bw2io/
+[read the docs]: https://brightway-io.readthedocs.io/
+[tests]: https://github.com/brightway-lca/brightway2-io/actions?workflow=Tests
+[codecov]: https://app.codecov.io/gh/brightway-lca/brightway-io
+[pre-commit]: https://github.com/pre-commit/pre-commit
+[black]: https://github.com/psf/black
+[License]: https://github.com/brightway-lca/brightway2-io/blob/main/LICENSE
+
+
 
 This package provides tools for the import, export, and management of inventory databases and impact assessment methods. It is part of the `Brightway LCA framework <https://brightway.dev/>`_. `Online documentation <https://2.docs.brightway.dev/>`_ is available, and the source code is hosted on `Github <https://github.com/brightway-lca/brightway2-io>`_.
 
@@ -28,8 +34,7 @@ This approach offers a number of benefits that help mitigate some of the serious
 
 Here is a typical usage. Note that we also have shortcuts for popular LCA databases such as ecoinvent:
 
-.. code-block:: ipython
-
+```python
    In [1]: import bw2io as bi
 
    In [2]: import brightway2 as bw2
@@ -96,5 +101,6 @@ Here is a typical usage. Note that we also have shortcuts for popular LCA databa
    Memory %: 11.17
    Created database: ei_38_cutoff
 
+```
 
 Note that brightway2-io can't magically make problems in databases go away.

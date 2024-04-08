@@ -16,6 +16,7 @@ on:
       - "**.bib"
       - "**.ya?ml" # captures both .yml and .yaml
       - "LICENSE"
+      - "README.md"
       - ".gitignore"
   pull_request:
     branches: [main]
@@ -24,8 +25,8 @@ on:
       - "**.md"
       - "**.bib"
       - "**.ya?ml"
-      - "LICENSE.txt"
-      - "README.rst"
+      - "LICENSE"
+      - "README.md"
       - ".gitignore"
   workflow_dispatch: # also allow manual trigger, for testing purposes
 
